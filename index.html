@@ -26,10 +26,23 @@
     <section class="content">
         <h1>Pokedex</h1>
 
-        <ol id="pokemonList" class="pokemons">
+        <ol id="pokemonList" class="pokemons">            
             <!-- ..... Pokemons here ..... -->
         </ol>
 
+
+        <div id="pokemonModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                
+                <img id="pokemonImage" alt="Imagem do Pokémon">
+                <h2 id="pokemonName"></h2>
+                <p id="pokemonType"></p>
+
+                <button class="close"> Close</button>
+            </div>
+        </div>
+        
+        
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
@@ -38,6 +51,7 @@
     </section>
 
     <!-- Nosso JS -->
+    <script src="/assets/js/modal.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
